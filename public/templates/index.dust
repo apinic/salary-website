@@ -1,5 +1,103 @@
 {>"layouts/master" /}
 
+{<title}
+{@pre type="content" key="title"/}
+{/title}
+
 {<body}
-    <h1>{@pre type="content" key="greeting"/}</h1>
+<div class="panel panel-info">
+  <div class="panel-heading">{@pre type="content" key="title"/}</div>
+  <div class="panel-body">
+    <div class="col-md-4 col-centered">
+      <img src="https://storage.googleapis.com/support-kms-prod/D8B422104CAC38F6FD84DA8614BD38C671C6" />
+    </div>
+    <div class="col-md-4 col-centered">
+      {?month}
+      <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+        <li class="active"><a href="#month" data-toggle="tab">{@pre type="content" key="monthly"/}</a></li>
+        <li><a href="#fortnightly" data-toggle="tab">{@pre type="content" key="fortnightly"/}</a></li>
+      </ul>
+      <div id="my-tab-content" class="tab-content">
+        <div class="tab-pane active" id="month">
+          <table class="table table-striped table-bordered">
+            <tbody>
+              <tr>
+                <td>{@pre type="content" key="salary"/}</td>
+                <td>C$ {month.salary}</td>
+              </tr>
+              <tr>
+                <td>{@pre type="content" key="inss"/}</td>
+                <td>C$ {month.inss}</td>
+              </tr>
+              <tr>
+                <td>{@pre type="content" key="ir"/}</td>
+                <td>C$ {month.ir}</td>
+              </tr>
+              <tr>
+                <td>{@pre type="content" key="freeSalary"/}</td>
+                <td>C$ {month.salaryFree}</td>
+              </tr>
+              <tr>
+                <td>{@pre type="content" key="retention"/}</td>
+                <td>C$ {month.retention}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tab-pane" id="fortnightly">
+          <table class="table table-striped table-bordered">
+            <tbody>
+              <tr>
+                <td>{@pre type="content" key="salary"/}</td>
+                <td>C$ {fortnightly.salary}</td>
+              </tr>
+              <tr>
+                <td>{@pre type="content" key="inss"/}</td>
+                <td>C$ {fortnightly.inss}</td>
+              </tr>
+              <tr>
+                <td>{@pre type="content" key="ir"/}</td>
+                <td>C$ {fortnightly.ir}</td>
+              </tr>
+              <tr>
+                <td>{@pre type="content" key="freeSalary"/}</td>
+                <td>C$ {fortnightly.salaryFree}</td>
+              </tr>
+              <tr>
+                <td>{@pre type="content" key="retention"/}</td>
+                <td>C$ {fortnightly.retention}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+      <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+          $('#tabs').tab();
+        });
+      </script>
+
+      {:else}
+      <form class="form-salary" role="form" method="POST">
+        <h2 class="form-salary-heading">{@pre type="content" key="header"/}</h2>
+        <input type="hidden" name="_csrf" value="{_csrf}">
+        <div class="form-group">
+          <label for="salary" class="sr-only">{@pre type="content" key="salary"/}</label>
+          <input type="text" name="salary" id="salary" class="form-control" placeholder="{@pre type="content" key="salary"/}" pattern="^\d+(?:\.\d{0,2})$" required autofocus>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-lg btn-primary btn-block" type="submit">{@pre type="content" key="button"/}</button>
+        </div>
+        <div class="form-group">
+          <strong>{@pre type="content" key="example"/}:</strong> 15350.90
+        </div>
+      </form>
+      {/month}
+    </div>
+    <div class="col-md-4 col-centered">
+      <img src="https://storage.googleapis.com/support-kms-prod/D8B422104CAC38F6FD84DA8614BD38C671C6" />
+    </div>
+  </div>
+</div>
 {/body}
