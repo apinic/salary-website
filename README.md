@@ -1,4 +1,3 @@
-salary-website
-==============
+# salary
 
-INSS, IR calculator
+INSS, IR Calculator
