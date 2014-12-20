@@ -9,7 +9,7 @@
   <div class="panel-heading">{@pre type="content" key="title"/}</div>
   <div class="panel-body">
     <div class="col-md-4 col-centered">
-      <img src="https://storage.googleapis.com/support-kms-prod/D8B422104CAC38F6FD84DA8614BD38C671C6" />
+      {>"layouts/ad-left" /}
     </div>
     <div class="col-md-4 col-centered">
       {?month}
@@ -96,7 +96,7 @@
       {/month}
     </div>
     <div class="col-md-4 col-centered">
-      <img src="https://storage.googleapis.com/support-kms-prod/D8B422104CAC38F6FD84DA8614BD38C671C6" />
+      {>"layouts/ad-right" /}
     </div>
   </div>
 </div>
