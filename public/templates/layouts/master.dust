@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{@pre type="content" key="title"/}">
+  <meta name="keywords" content="Nicaragua, Salario, Inns, IR, Cálculo, Asalariados">
   <title>{+title /}</title>
   <link rel="stylesheet" href="/components/fontawesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="/components/bootstrap/dist/css/bootstrap.min.css">
