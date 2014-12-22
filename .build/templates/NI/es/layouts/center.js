@@ -1,0 +1,1 @@
+(function(){dust.register("layouts/center",body_0);function body_0(chk,ctx){return chk.exists(ctx.get(["month"], false),ctx,{"else":body_1,"block":body_2},null);}function body_1(chk,ctx){return chk.partial("layouts/form",ctx,null);}function body_2(chk,ctx){return chk.partial("layouts/table",ctx,null);}return body_0;})();

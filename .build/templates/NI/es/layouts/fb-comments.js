@@ -1,0 +1,1 @@
+(function(){dust.register("layouts/fb-comments",body_0);function body_0(chk,ctx){return chk.write("<div class=\"col-md-12\"><div class=\"fb-comments\" data-href=\"http://salary.apinic.org/\" data-numposts=\"10\" data-width=\"100%\" data-colorscheme=\"light\"></div></div>");}return body_0;})();
