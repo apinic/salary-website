@@ -1,9 +1,23 @@
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Apinic Salary Right -->
-<ins class="adsbygoogle"
-style="display:inline-block;width:300px;height:250px"
-data-ad-client="ca-pub-9262159992567637"
-data-ad-slot="3970738145"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+<div class="visible-xs-* hidden-sm hidden-md hidden-lg">
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- Apinic Salary Bottom -->
+  <ins class="adsbygoogle"
+  style="display:block"
+  data-ad-client="ca-pub-9262159992567637"
+  data-ad-slot="6342121747"
+  data-ad-format="auto"></ins>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+<div class="hidden-xs visible-sm-* visible-md-* visible-lg-*">
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- Apinic Salary Right -->
+  <ins class="adsbygoogle"
+  style="display:inline-block;width:300px;height:250px"
+  data-ad-client="ca-pub-9262159992567637"
+  data-ad-slot="3970738145"></ins>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>

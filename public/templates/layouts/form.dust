@@ -1,0 +1,14 @@
+<form class="form-salary" role="form" method="POST">
+  <h2 class="form-salary-heading">{@pre type="content" key="header"/}</h2>
+  <input type="hidden" name="_csrf" value="{_csrf}">
+  <div class="form-group">
+    <label for="salary" class="sr-only">{@pre type="content" key="salary"/}</label>
+    <input type="text" name="salary" id="salary" class="form-control" placeholder="{@pre type="content" key="salary"/}" pattern="^\d+(?:\.\d{0,2})$" required autofocus>
+  </div>
+  <div class="form-group">
+    <button class="btn btn-lg btn-primary btn-block" type="submit">{@pre type="content" key="button"/}</button>
+  </div>
+  <div class="form-group">
+    <strong>{@pre type="content" key="example"/}:</strong> 15350.90
+  </div>
+</form>

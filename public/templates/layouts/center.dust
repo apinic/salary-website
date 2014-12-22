@@ -1,0 +1,5 @@
+{?month}
+{>"layouts/table" /}
+{:else}
+{>"layouts/form" /}
+{/month}
